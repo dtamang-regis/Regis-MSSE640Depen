@@ -173,7 +173,6 @@ During testing, the application performed well under moderate load. However, und
 
 ---
 
-## Conclusion
 
 ## Conclusion
 
