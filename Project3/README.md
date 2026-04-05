@@ -73,7 +73,7 @@ Threads rapidly increase (spike) and then drop, simulating sudden traffic bursts
 The Thread Group defines the number of users (threads), ramp-up time, and loop count. It controls how many users access the application and how quickly they are introduced.
 
 #### Screenshot:
-![Thread Group](images/thread-group.png)
+![alt text](<../Screenshot 2026-04-05 at 1.12.49 PM.png>)
 
 ---
 
@@ -82,7 +82,7 @@ The Thread Group defines the number of users (threads), ramp-up time, and loop c
 The HTTP Request Sampler is used to send requests to the server. In this project, it was configured to send GET requests to the `/words` endpoint.
 
 #### Screenshot:
-![HTTP Request](images/http-request.png)
+![alt text](<../Screenshot 2026-04-05 at 1.13.59 PM.png>)
 
 ---
 
@@ -91,7 +91,7 @@ The HTTP Request Sampler is used to send requests to the server. In this project
 Config Elements allow customization of requests. The HTTP Header Manager is used to add headers such as `Content-Type: application/json`.
 
 #### Screenshot:
-![Header Manager](images/header-manager.png)
+![alt text](<../Screenshot 2026-04-05 at 1.15.44 PM.png>)
 
 ---
 
@@ -100,7 +100,8 @@ Config Elements allow customization of requests. The HTTP Header Manager is used
 Listeners display the results of the test, including response time, success rate, and throughput. The "View Results Tree" and "Summary Report" listeners were used.
 
 #### Screenshot:
-![Listener](images/listener.png)
+![alt text](<../Screenshot 2026-04-05 at 1.16.56 PM.png>).    => View Results Tree
+![alt text](<../Screenshot 2026-04-05 at 1.17.07 PM.png>).    => Summary Results Tree
 
 ---
 
@@ -129,11 +130,16 @@ For this test, I created a Thread Group configured to simulate continuous user a
 
 #### Screenshots:
 
-![Endurance Thread Group](images/endurance-thread-group.png)
+## [Endurance Thread Group]
+![alt text](<../Screenshot 2026-04-05 at 1.19.47 PM.png>)
 
-![Endurance HTTP Request](images/endurance-http-request.png)
+## [Endurance HTTP Request]
+![alt text](<../Screenshot 2026-04-05 at 1.20.35 PM.png>)
 
-![Endurance Results](images/endurance-results.png)
+
+## [Endurance Results]
+![alt text](<../Screenshot 2026-04-05 at 1.21.33 PM.png>)
+![alt text](<../Screenshot 2026-04-05 at 1.21.52 PM.png>)
 
 ---
 
@@ -147,9 +153,11 @@ In this test, the system was subjected to a high number of users to evaluate per
 
 #### Screenshots:
 
-![Stress Thread Group](images/stress-thread-group.png)
+## [Stress Thread Group]
+![alt text](<../Screenshot 2026-04-05 at 1.23.44 PM.png>)
 
-![Stress Results](images/stress-results.png)
+## [Stress Results]
+![alt text](<../Screenshot 2026-04-05 at 1.25.03 PM.png>)
 
 ---
 
