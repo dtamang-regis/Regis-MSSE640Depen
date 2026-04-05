@@ -161,6 +161,12 @@ In this test, the system was subjected to a high number of users to evaluate per
 
 ---
 
+## Overall Graph Results
+
+![alt text](<../Screenshot 2026-04-05 at 1.34.41 PM.png>)
+
+The combined graph shows how the system behaves under different workload conditions by appending load, endurance, and stress tests into a single timeline. Performance remains stable during load and endurance phases, indicating consistent handling of expected traffic over time. However, during the stress phase, a sharp increase in threads leads to performance degradation, highlighting the system’s breaking point and recovery behavior.
+
 ## Results and Observations
 
 During testing, the application performed well under moderate load. However, under stress conditions, response time increased, and some requests showed delays. This indicates that the system can handle normal traffic efficiently but may require optimization for high traffic scenarios.
@@ -169,7 +175,15 @@ During testing, the application performed well under moderate load. However, und
 
 ## Conclusion
 
-This project provided hands-on experience with performance testing using JMeter. I learned how to simulate multiple users, analyze system performance, and identify potential bottlenecks.
+## Conclusion
+
+This project provided valuable hands-on experience with performance testing using Apache JMeter. Since this was my first time using JMeter, I initially found it challenging to understand its components such as Thread Groups, HTTP Request Samplers, Config Elements, and Listeners. However, after practicing and exploring the tool, I was able to understand how these components work together to simulate user traffic and measure application performance.
+
+While working on the project, I encountered several issues. At the beginning, I faced multiple errors and warnings, including messages related to deprecated plugins and uncaught exceptions in threads. These errors made it difficult to interpret test results and slowed down my progress. Additionally, the JMeter interface did not display properly at first, and I had to change the look and feel setting to "Metal" to ensure the application worked correctly on my system.
+
+To resolve these issues, I took several steps. I ensured that I was using a stable version of JMeter and avoided unnecessary or outdated plugins. I also carefully reviewed my test configurations, such as verifying correct endpoints, ports, and request settings, which helped eliminate many runtime errors. Changing the look and feel to "Metal" improved the UI stability and allowed me to interact with the tool without issues. Over time, debugging these errors helped me better understand how JMeter operates internally.
+
+Overall, this project helped me gain practical knowledge of performance testing and API behavior under load. I also developed problem-solving skills by troubleshooting real-world issues, which will be valuable in future software development and testing tasks.
 
 Using my own API endpoint `/words` made the testing more practical and relevant. In the future, performance can be improved by optimizing backend processing and implementing caching mechanisms.
 
