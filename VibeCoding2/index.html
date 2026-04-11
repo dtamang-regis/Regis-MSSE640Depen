@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Table Login System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Decision Table Login System</h1>
+            <p>Software Testing Assignment - Decision Tables & Pairwise Testing</p>
+        </header>
+
+        <main>
+            <section class="login-section">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="accountLocked">Account Status:</label>
+                        <select id="accountLocked" name="accountLocked">
+                            <option value="false">Active</option>
+                            <option value="true">Locked</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="twoFactorEnabled">2FA Status:</label>
+                        <select id="twoFactorEnabled" name="twoFactorEnabled">
+                            <option value="false">Disabled</option>
+                            <option value="true">Enabled</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="twoFactorCode">2FA Code (if enabled):</label>
+                        <input type="text" id="twoFactorCode" name="twoFactorCode" placeholder="Enter 6-digit code">
+                    </div>
+                    
+                    <button type="submit">Login</button>
+                </form>
+                
+                <div id="message" class="message"></div>
+            </section>
+
+            <section class="test-section">
+                <h2>Test Cases</h2>
+                <div class="test-controls">
+                    <button id="runAllTests">Run All Tests</button>
+                    <button id="runSunnyTests">Run Sunny Tests</button>
+                    <button id="runRainyTests">Run Rainy Tests</button>
+                </div>
+                <div id="testResults" class="test-results"></div>
+            </section>
+
+            <section class="decision-table-section">
+                <h2>Decision Table</h2>
+                <div id="decisionTable" class="decision-table"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
