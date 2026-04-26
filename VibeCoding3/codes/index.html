@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Transition Testing - Login System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>State Transition Testing</h1>
+            <p class="subtitle">State, Control Flow & Data Flow Testing Demonstration</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <h2>Login System</h2>
+                <div id="stateDisplay" class="state-display"></div>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                        <span class="error-message" id="usernameError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        <span class="error-message" id="passwordError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="accountLocked">Account Status:</label>
+                        <select id="accountLocked" name="accountLocked">
+                            <option value="false">Active</option>
+                            <option value="true">Locked</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="twoFactorEnabled">2FA Status:</label>
+                        <select id="twoFactorEnabled" name="twoFactorEnabled">
+                            <option value="false">Disabled</option>
+                            <option value="true">Enabled</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group" id="twoFactorCodeGroup" style="display: none;">
+                        <label for="twoFactorCode">2FA Code:</label>
+                        <input type="text" id="twoFactorCode" name="twoFactorCode" placeholder="Enter 6-digit code">
+                        <span class="error-message" id="twoFactorCodeError"></span>
+                    </div>
+                    
+                    <div class="button-group">
+                        <button type="submit" class="login-btn">Login</button>
+                        <button type="button" id="resetBtn" class="reset-btn">Reset State</button>
+                    </div>
+                </form>
+                
+                <div id="message" class="message"></div>
+            </section>
+
+            <section class="results-section" id="resultsSection" style="display: none;">
+                <h2>Login Results</h2>
+                <div class="result-card">
+                    <div class="login-status" id="loginStatus">--</div>
+                    <div class="state-info" id="stateInfo">--</div>
+                    <div class="validation-summary" id="validationSummary"></div>
+                </div>
+            </section>
+
+            <section class="test-info">
+                <h2>System States</h2>
+                <div class="rules-grid">
+                    <div class="rule-card">
+                        <h3>Logged Out</h3>
+                        <p>Initial state, user not authenticated</p>
+                    </div>
+                    <div class="rule-card">
+                        <h3>Logged In</h3>
+                        <p>User successfully authenticated</p>
+                    </div>
+                    <div class="rule-card">
+                        <h3>Failed</h3>
+                        <p>Authentication attempt failed</p>
+                    </div>
+                    <div class="rule-card">
+                        <h3>Locked</h3>
+                        <p>Account locked due to security policies</p>
+                    </div>
+                    <div class="rule-card">
+                        <h3>2FA Pending</h3>
+                        <p>Valid credentials, awaiting 2FA</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="test-controls-section">
+                <h2>Test Controls</h2>
+                <div class="test-controls">
+                    <button id="runStateTests">State Tests</button>
+                    <button id="runControlFlowTests">Control Flow Tests</button>
+                    <button id="runDataFlowTests">Data Flow Tests</button>
+                    <button id="runSunnyTests">Sunny Day Tests</button>
+                    <button id="runRainyTests">Rainy Day Tests</button>
+                </div>
+                <div id="testResults" class="test-results"></div>
+            </section>
+
+            <section class="analysis-section">
+                <h2>Testing Analysis</h2>
+                <div class="analysis-tabs">
+                    <button class="tab-btn active" data-tab="stateTransition">State Transitions</button>
+                    <button class="tab-btn" data-tab="controlFlow">Control Flow</button>
+                    <button class="tab-btn" data-tab="dataFlow">Data Flow</button>
+                </div>
+                <div class="tab-content active" id="stateTransition">
+                    <div id="stateTransitionTable" class="analysis-table"></div>
+                </div>
+                <div class="tab-content" id="controlFlow">
+                    <div id="controlFlowPaths" class="analysis-content"></div>
+                </div>
+                <div class="tab-content" id="dataFlow">
+                    <div id="dataFlowAnalysis" class="analysis-content"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
