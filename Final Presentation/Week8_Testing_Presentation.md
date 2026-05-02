@@ -73,7 +73,7 @@ Regis-MSSE640Depen/
 ## 4. AI Tools Used
 
 ### AI Assistance Inferred:
-Based on the project complexity and documentation quality, AI tools likely assisted with:
+
 
 - **Code Generation:** Boilerplate FastAPI setup, Selenium WebDriver initialization
 - **Debugging Help:** Troubleshooting JMeter UI issues and plugin errors
