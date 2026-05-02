@@ -91,36 +91,124 @@ Based on the project complexity and documentation quality, AI tools likely assis
 
 ## 5. Screenshot Section
 
-> **Note:** Insert screenshots using the following syntax. Place actual screenshot files in the project root folder.
-
 ### Project 1: Unit Testing Screenshots
-```markdown
-![Unit Test Execution](./Screenshot%202026-03-20%20at%209.00.59%20PM.png)
-```
+
+**Unit Test Execution Results:**
+![Unit Test Execution](<./Screenshot 2026-03-20 at 9.00.59 PM.png>)
+
+---
 
 ### Project 2: Postman API Testing Screenshots
-```markdown
-![Postman Collection](./Screenshot%202026-03-29%20at%201.56.19%20PM.png)
-![GET Request Test](./Screenshot%202026-03-29%20at%201.58.33%20PM.png)
-![POST Request Test](./Screenshot%202026-03-29%20at%202.02.36%20PM.png)
-![Error Handling](./Screenshot%202026-03-29%20at%202.04.26%20PM.png)
-```
+
+**Postman Collection Setup:**
+![Postman Collection](<./Screenshot 2026-03-29 at 1.56.19 PM.png>)
+
+**GET / - API Status Check:**
+![GET Root](<./Screenshot 2026-03-29 at 1.58.33 PM.png>)
+
+**GET /words - List All Words:**
+![GET Words](<./Screenshot 2026-03-29 at 1.59.51 PM.png>)
+
+**GET /word/{word} - Fetch Word Details:**
+![GET Word Details](<./Screenshot 2026-03-29 at 2.01.20 PM.png>)
+
+**POST /word - Add New Word:**
+![POST Word](<./Screenshot 2026-03-29 at 2.02.36 PM.png>)
+
+**PUT /word/{word} - Update Word:**
+![PUT Word](<./Screenshot 2026-03-29 at 2.03.13 PM.png>)
+
+**DELETE /word/{word} - Delete Word:**
+![DELETE Word](<./Screenshot 2026-03-29 at 2.03.36 PM.png>)
+
+**Error Handling - Word Not Found:**
+![Error Handling](<./Screenshot 2026-03-29 at 2.04.26 PM.png>)
+
+**cURL API Call:**
+![cURL Call](<./Screenshot 2026-03-29 at 2.07.26 PM.png>)
+
+---
 
 ### Project 3: JMeter Performance Testing Screenshots
-```markdown
+
+**Performance Test Graphs:**
+
+Load Test Graph:
 ![Load Test Graph](./load-test-graph.png)
+
+Endurance Test Graph:
 ![Endurance Test Graph](./endurance-test-graph.png)
+
+Stress Test Graph:
 ![Stress Test Graph](./stress-test-graph.png)
-![Thread Group Config](./Screenshot%202026-04-05%20at%201.19.47%20PM.png)
-![Test Results](./Screenshot%202026-04-05%20at%201.34.41%20PM.png)
-```
+
+**JMeter Component Configuration:**
+
+Thread Group Setup:
+![Thread Group](<./Screenshot 2026-04-05 at 1.12.49 PM.png>)
+
+HTTP Request Sampler:
+![HTTP Request](<./Screenshot 2026-04-05 at 1.13.59 PM.png>)
+
+HTTP Header Manager:
+![Header Manager](<./Screenshot 2026-04-05 at 1.15.44 PM.png>)
+
+Listeners - View Results Tree:
+![View Results Tree](<./Screenshot 2026-04-05 at 1.16.56 PM.png>)
+
+Listeners - Summary Report:
+![Summary Report](<./Screenshot 2026-04-05 at 1.17.07 PM.png>)
+
+**Endurance Test Configuration:**
+
+Endurance Thread Group (50 users, 10s ramp-up, 50 loops):
+![Endurance Thread Group](<./Screenshot 2026-04-05 at 1.19.47 PM.png>)
+
+Endurance HTTP Request:
+![Endurance HTTP Request](<./Screenshot 2026-04-05 at 1.20.35 PM.png>)
+
+Endurance Test Results:
+![Endurance Results 1](<./Screenshot 2026-04-05 at 1.21.33 PM.png>)
+![Endurance Results 2](<./Screenshot 2026-04-05 at 1.21.52 PM.png>)
+
+**Stress Test Configuration:**
+
+Stress Thread Group (200 users, 5s ramp-up):
+![Stress Thread Group](<./Screenshot 2026-04-05 at 1.23.44 PM.png>)
+
+Stress Test Results:
+![Stress Results](<./Screenshot 2026-04-05 at 1.25.03 PM.png>)
+
+**Overall Combined Graph Results:**
+![Overall Graph](<./Screenshot 2026-04-05 at 1.34.41 PM.png>)
+
+---
 
 ### Project 4: Selenium Automation Screenshots
-```markdown
-![Search Test](./Screenshot%202026-04-26%20at%203.49.42%20PM.png)
-![Login Test](./Screenshot%202026-04-26%20at%203.54.26%20PM.png)
-![Product Browsing](./Screenshot%202026-04-26%20at%203.56.15%20PM.png)
-```
+
+**Test 1: Search Functionality**
+
+Search Input Field:
+![Search Input](<./Screenshot 2026-04-26 at 3.49.40 PM.png>)
+
+Search Results:
+![Search Results](<./Screenshot 2026-04-26 at 3.49.42 PM.png>)
+
+**Test 2: Login Functionality**
+
+Login Form:
+![Login Form](<./Screenshot 2026-04-26 at 3.54.19 PM.png>)
+
+Login Success:
+![Login Success](<./Screenshot 2026-04-26 at 3.54.26 PM.png>)
+
+**Test 3: Product Browsing**
+
+Product Listings:
+![Product Listings](<./Screenshot 2026-04-26 at 3.56.08 PM.png>)
+
+Product Details:
+![Product Details](<./Screenshot 2026-04-26 at 3.56.15 PM.png>)
 
 ---
 
