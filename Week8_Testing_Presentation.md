@@ -95,7 +95,7 @@ Based on the project complexity and documentation quality, AI tools likely assis
 
 **Unit Test Execution Output:**
 
-![Unit Test Execution](<./Screenshot 2026-03-20 at 9.00.59 PM.png>)
+![alt text](<../Screenshot 2026-03-20 at 9.00.59 PM.png>)
 
 *Caption: All 4 unit tests passed successfully (Equilateral, Isosceles, Scalene, Invalid Input)*
 
@@ -105,201 +105,85 @@ Based on the project complexity and documentation quality, AI tools likely assis
 
 **Postman Collection Setup:**
 
-![Postman Collection](<./Screenshot 2026-03-29 at 1.56.19 PM.png>)
+![alt text](<../Screenshot 2026-03-29 at 1.56.19 PM.png>)
 
-*Caption: Created "Word API Testing" collection with environment variable {{url}}*
+![alt text](<../Screenshot 2026-03-29 at 1.58.33 PM.png>)
 
-**GET / - API Status Check:**
+![alt text](<../Screenshot 2026-03-29 at 1.59.51 PM.png>)
 
-![GET Root](<./Screenshot 2026-03-29 at 1.58.33 PM.png>)
+![alt text](<../Screenshot 2026-03-29 at 2.01.20 PM.png>)
 
-*Caption: API status message returned "Word API is running"*
-
-**GET /words - List All Words:**
-
-![GET Words](<./Screenshot 2026-03-29 at 1.59.51 PM.png>)
-
-*Caption: Returns default words and custom words array*
-
-**GET /word/{word} - Fetch Word Details:**
-
-![GET Word Details](<./Screenshot 2026-03-29 at 2.01.20 PM.png>)
-
-*Caption: Fetches word details from external dictionary API*
-
-**POST /word - Add New Word:**
-
-![POST Word](<./Screenshot 2026-03-29 at 2.02.36 PM.png>)
-
-*Caption: Successfully added custom word with definition, example, and synonyms*
-
-**PUT /word/{word} - Update Word:**
-
-![PUT Word](<./Screenshot 2026-03-29 at 2.03.13 PM.png>)
-
-*Caption: Updates existing custom word data*
-
-**DELETE /word/{word} - Delete Word:**
-
-![DELETE Word](<./Screenshot 2026-03-29 at 2.03.36 PM.png>)
-
-*Caption: Deletes custom word from memory storage*
-
-**Error Handling - Word Not Found:**
-
-![Error Handling](<./Screenshot 2026-03-29 at 2.04.26 PM.png>)
-
-*Caption: 404 error returned when word does not exist*
-
-**cURL API Call:**
-
-![cURL Call](<./Screenshot 2026-03-29 at 2.07.26 PM.png>)
-
-*Caption: Command-line API testing using cURL*
+![alt text](<../Screenshot 2026-03-29 at 2.02.36 PM.png>)
 
 ---
 
 ### Project 3: JMeter Performance Testing Screenshots
 
-**Performance Test Graphs:**
 
-Load Test Graph:
+#### Screenshots:
 
-![Load Test Graph](./load-test-graph.png)
+![alt text](../stress-test-graph.png)
 
-*Caption: Gradual thread increase to steady level for normal load testing*
+![alt text](<../Screenshot 2026-04-05 at 1.12.49 PM.png>)
 
-Endurance Test Graph:
+![alt text](<../Screenshot 2026-04-05 at 1.13.59 PM.png>)
 
-![Endurance Test Graph](./endurance-test-graph.png)
+![alt text](<../Screenshot 2026-04-05 at 1.15.44 PM.png>)
 
-*Caption: Threads held constant for extended duration to test stability*
+## [Endurance Thread Group]
+![alt text](<../Screenshot 2026-04-05 at 1.19.47 PM.png>)
 
-Stress Test Graph:
+## [Endurance HTTP Request]
+![alt text](<../Screenshot 2026-04-05 at 1.20.35 PM.png>)
 
-![Stress Test Graph](./stress-test-graph.png)
 
-*Caption: Rapid thread spike to test system breaking point*
+## [Endurance Results]
+![alt text](<../Screenshot 2026-04-05 at 1.21.33 PM.png>)
+![alt text](<../Screenshot 2026-04-05 at 1.21.52 PM.png>)
 
-**JMeter Component Configuration:**
 
-Thread Group Setup:
+## [Stress Thread Group]
+![alt text](<../Screenshot 2026-04-05 at 1.23.44 PM.png>)
 
-![Thread Group](<./Screenshot 2026-04-05 at 1.12.49 PM.png>)
+## [Stress Results]
+![alt text](<../Screenshot 2026-04-05 at 1.25.03 PM.png>)
 
-*Caption: Defines number of users, ramp-up time, and loop count*
+---
 
-HTTP Request Sampler:
+## Overall Graph Results
 
-![HTTP Request](<./Screenshot 2026-04-05 at 1.13.59 PM.png>)
-
-*Caption: Configured to send GET requests to /words endpoint*
-
-HTTP Header Manager:
-
-![Header Manager](<./Screenshot 2026-04-05 at 1.15.44 PM.png>)
-
-*Caption: Adds Content-Type: application/json header*
-
-Listeners - View Results Tree:
-
-![View Results Tree](<./Screenshot 2026-04-05 at 1.16.56 PM.png>)
-
-*Caption: Displays detailed request/response data*
-
-Listeners - Summary Report:
-
-![Summary Report](<./Screenshot 2026-04-05 at 1.17.07 PM.png>)
-
-*Caption: Shows aggregate statistics including response time and throughput*
-
-**Endurance Test Configuration:**
-
-Endurance Thread Group (50 users, 10s ramp-up, 50 loops):
-
-![Endurance Thread Group](<./Screenshot 2026-04-05 at 1.19.47 PM.png>)
-
-*Caption: 50 threads with 10-second ramp-up and 50 loop count*
-
-Endurance HTTP Request:
-
-![Endurance HTTP Request](<./Screenshot 2026-04-05 at 1.20.35 PM.png>)
-
-*Caption: GET request configuration for endurance testing*
-
-Endurance Test Results:
-
-![Endurance Results 1](<./Screenshot 2026-04-05 at 1.21.33 PM.png>)
-
-![Endurance Results 2](<./Screenshot 2026-04-05 at 1.21.52 PM.png>)
-
-*Caption: Endurance test execution results showing stable performance*
-
-**Stress Test Configuration:**
-
-Stress Thread Group (200 users, 5s ramp-up):
-
-![Stress Thread Group](<./Screenshot 2026-04-05 at 1.23.44 PM.png>)
-
-*Caption: 200 threads with 5-second ramp-up for stress testing*
-
-Stress Test Results:
-
-![Stress Results](<./Screenshot 2026-04-05 at 1.25.03 PM.png>)
-
-*Caption: Stress test results showing system behavior under extreme load*
-
-**Overall Combined Graph Results:**
-
-![Overall Graph](<./Screenshot 2026-04-05 at 1.34.41 PM.png>)
-
-*Caption: Combined timeline showing load, endurance, and stress test phases*
-
+![alt text](<../Screenshot 2026-04-05 at 1.34.41 PM.png>)
 ---
 
 ### Project 4: Selenium Automation Screenshots
 
 **Test 1: Search Functionality**
 
-Search Input Field:
+# Test Execution Screenshots
 
-![Search Input](<./Screenshot 2026-04-26 at 3.49.40 PM.png>)
+### Test 1: Search Functionality
 
-*Caption: Search field located and "Tshirt" entered*
+![alt text](<../Screenshot 2026-04-26 at 3.49.40 PM.png>)
 
-Search Results:
+![alt text](<../Screenshot 2026-04-26 at 3.49.42 PM.png>)
 
-![Search Results](<./Screenshot 2026-04-26 at 3.49.42 PM.png>)
+**Caption**: Search functionality test successfully executed showing search input field with "Tshirt" entered and search results displayed on AutomationExercise website.
 
-*Caption: Search results displayed with relevant products*
+### Test 2: Login Functionality  
 
-**Test 2: Login Functionality**
+![alt text](<../Screenshot 2026-04-26 at 3.54.19 PM.png>)
 
-Login Form:
+![alt text](<../Screenshot 2026-04-26 at 3.54.26 PM.png>)
 
-![Login Form](<./Screenshot 2026-04-26 at 3.54.19 PM.png>)
+**Caption**: Login functionality test successfully executed showing user credentials entered and successful login confirmation with account access on AutomationExercise website.
 
-*Caption: Login page with email and password fields*
+### Test 3: Product Browsing Functionality
 
-Login Success:
+![alt text](<../Screenshot 2026-04-26 at 3.56.08 PM.png>)
 
-![Login Success](<./Screenshot 2026-04-26 at 3.54.26 PM.png>)
+![alt text](<../Screenshot 2026-04-26 at 3.56.15 PM.png>)
 
-*Caption: Successful login with account access confirmed*
-
-**Test 3: Product Browsing**
-
-Product Listings:
-
-![Product Listings](<./Screenshot 2026-04-26 at 3.56.08 PM.png>)
-
-*Caption: Homepage product listings displayed*
-
-Product Details:
-
-![Product Details](<./Screenshot 2026-04-26 at 3.56.15 PM.png>)
-
-*Caption: Product detail page with information displayed*
+**Caption**: Product browsing functionality test successfully executed showing product listings displayed and interaction with product details on AutomationExercise website.
 
 ---
 
